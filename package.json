@@ -1,16 +1,16 @@
 {
-  "name": "artyom-ganev.github.io",
+  "name": "artyom-ganev-src",
   "version": "1.0.0",
   "private": true,
   "author": "Artyom Ganev",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/Artyom-Ganev/artyom-ganev.github.io/issues"
+    "url": "https://github.com/Artyom-Ganev/artyom-ganev-src/issues"
   },
   "homepage": "http://artyom-ganev.github.io",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Artyom-Ganev/artyom-ganev.github.io.git"
+    "url": "git+https://github.com/Artyom-Ganev/artyom-ganev-src.git"
   },
   "dependencies": {
     "react": "^16.7.0",
