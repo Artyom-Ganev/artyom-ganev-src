@@ -13,8 +13,8 @@
     "url": "git+https://github.com/Artyom-Ganev/artyom-ganev-src.git"
   },
   "dependencies": {
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-scripts-ts": "3.1.0"
   },
   "scripts": {
@@ -24,10 +24,11 @@
     "eject": "react-scripts-ts eject"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.12",
-    "@types/node": "^10.12.18",
-    "@types/react": "^16.7.18",
-    "@types/react-dom": "^16.0.11",
-    "typescript": "^3.2.2"
+    "@types/jest": "^23.3.14",
+    "@types/node": "^10.14.6",
+    "@types/react": "^16.8.14",
+    "@types/react-dom": "^16.8.4",
+    "less": "^3.9.0",
+    "typescript": "^3.4.5"
   }
 }
