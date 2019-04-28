@@ -15,8 +15,8 @@ const PAGES = new Map([
  * Main application
  */
 export default class App extends React.Component {
-    private menu: Menu | null;
-    private menuNode: Element | Text | null;
+    private menu: Menu | null = null;
+    private menuNode: Element | Text | null = null;
     private currentPage: JSX.Element | undefined = (<Main/>);
 
     constructor(params: object) {
@@ -47,7 +47,7 @@ export default class App extends React.Component {
         );
     }
 
-    private onMenuItemClick(event: CustomEvent): void {
+    private onMenuItemClick(event: CustomEventInit): void {
         const item = PAGES.get(event.detail);
         if (item) {
             this.currentPage = item;
