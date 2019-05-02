@@ -3,7 +3,7 @@ import blog from '../../resources/blog.json';
 import './Blog.css';
 
 /**
- * Contacts page
+ * Blog page
  */
 export default class Blog extends React.Component {
     public render() {

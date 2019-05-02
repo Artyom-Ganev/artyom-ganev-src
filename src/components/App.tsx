@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './App.css';
 import Menu from './Navigation/Menu';
 import Blog from './Page/Blog';
+import Careers from './Page/Careers';
 import Contacts from './Page/Contacts';
 import Main from './Page/Main';
 
@@ -10,7 +11,7 @@ const PAGES = new Map([
     ['main', (<Main/>)],
     // ['bio', (<Main/>)],
     ['blog', (<Blog/>)],
-    // ['careers', (<Main/>)],
+    ['careers', (<Careers/>)],
     ['contacts', (<Contacts/>)]
 ]);
 
