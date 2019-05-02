@@ -5,14 +5,16 @@
       "title": "Tensor ltd.",
       "post": "Web developer",
       "description": "description2",
-      "tools": "TypeScript, Less, Git, JavaScript, CSS, HTML"
+      "tools": "TypeScript, Less, Git, JavaScript, CSS, HTML",
+      "site": "https://tensor.ru"
     },
     {
       "key": "2015-01_2017-02",
       "title": "Scientific and Production Association 'Krista'",
       "post": "Java developer",
       "description": "description1",
-      "tools": "Java 7/8, JBoss Server, JBPM, Drools, Maven, Mercurial "
+      "tools": "Java 7/8, JBoss Server, JBPM, Drools, Maven, Mercurial",
+      "site": "https://www.krista.ru"
     }
   ]
 }
