@@ -1,12 +1,15 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './App.css';
 import Menu from './Navigation/Menu';
+import Blog from './Page/Blog';
 import Contacts from './Page/Contacts';
 import Main from './Page/Main';
 
 const PAGES = new Map([
     ['main', (<Main/>)],
     // ['bio', (<Main/>)],
+    ['blog', (<Blog/>)],
     // ['careers', (<Main/>)],
     ['contacts', (<Contacts/>)]
 ]);
@@ -38,7 +41,6 @@ export default class App extends React.Component {
     }
 
     public render() {
-
         return (
             <div className="flexBox flexColumn">
                 <Menu ref={elem => this.menu = elem}/>
@@ -47,6 +49,10 @@ export default class App extends React.Component {
         );
     }
 
+    /**
+     * Navigation menu item click handler
+     * @param event
+     */
     private onMenuItemClick(event: CustomEventInit): void {
         const item = PAGES.get(event.detail);
         if (item) {
