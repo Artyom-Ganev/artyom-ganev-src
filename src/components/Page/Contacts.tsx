@@ -1,6 +1,7 @@
 import React from 'react';
 
 const FACEBOOK = 'https://www.facebook.com/artyom.ganev';
+const MAIL = 'a.a.ganev@gmail.com';
 /**
  * Contacts page
  */
@@ -15,9 +16,11 @@ export default class Contacts extends React.Component {
                         <div>Facebook:&nbsp;</div>
                     </div>
                     <div>
-                        <div>a.a.ganev@gmail.com</div>
                         <div>
-                            <a href={FACEBOOK} target="_blank" rel="noopener noreferrer">{FACEBOOK}</a>
+                            <a href={`mailto:${MAIL}`} target="_blank" rel="noopener noreferrer">{MAIL}</a>
+                        </div>
+                        <div>
+                            <a href={FACEBOOK} target="_blank" rel="noopener noreferrer">artyom.ganev</a>
                         </div>
                     </div>
                 </div>
