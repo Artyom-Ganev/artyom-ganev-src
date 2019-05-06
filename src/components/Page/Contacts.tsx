@@ -1,33 +1,37 @@
 import React from 'react';
+import contacts from '../../resources/contacts.json';
 
-const FACEBOOK = 'https://www.facebook.com/artyom.ganev';
-const GITHUB = 'https://github.com/Artyom-Ganev';
-const MAIL = 'a.a.ganev@gmail.com';
+interface IContact {
+    key: string;
+    value: string;
+    link: string;
+    title: string;
+}
+
 /**
  * Contacts page
  */
 export default class Contacts extends React.Component {
+
+    private titles = contacts.data.map((item: IContact) => {
+        return <div key={item.key}>{item.value}:&nbsp;</div>;
+    });
+
+    private items = contacts.data.map((item: IContact) => {
+        return (
+            <div key={item.key}>
+                <a href={item.link} target="_blank" rel="noopener noreferrer">{item.title}</a>
+            </div>
+        );
+    });
+
     public render() {
         return (
             <div className="app-page__root">
                 <h2>Contacts</h2>
-                <div className="flexBox">
-                    <div>
-                        <div>E-mail:&nbsp;</div>
-                        <div>Facebook:&nbsp;</div>
-                        <div>GitHub:&nbsp;</div>
-                    </div>
-                    <div>
-                        <div>
-                            <a href={`mailto:${MAIL}`} target="_blank" rel="noopener noreferrer">{MAIL}</a>
-                        </div>
-                        <div>
-                            <a href={FACEBOOK} target="_blank" rel="noopener noreferrer">artyom.ganev</a>
-                        </div>
-                        <div>
-                            <a href={GITHUB} target="_blank" rel="noopener noreferrer">Artyom-Ganev</a>
-                        </div>
-                    </div>
+                <div className="flexBox alignItemsBaseline">
+                    <div>{this.titles}</div>
+                    <div>{this.items}</div>
                 </div>
             </div>
         );
