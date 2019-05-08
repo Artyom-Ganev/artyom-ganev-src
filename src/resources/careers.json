@@ -1,18 +1,25 @@
 {
   "data": [
     {
-      "key": "2017-02",
+      "key": "0",
       "title": "Tensor ltd.",
-      "post": "Web developer",
-      "description": "description2",
+      "dates": [
+        "2017-02"
+      ],
+      "post": "Web developer, team lead",
+      "description": "",
       "tools": "TypeScript, Less, Git, JavaScript, CSS, HTML",
       "site": "https://tensor.ru"
     },
     {
-      "key": "2015-01_2017-02",
+      "key": "1",
+      "dates": [
+        "2015-01",
+        "2017-02"
+      ],
       "title": "Scientific and Production Association 'Krista'",
       "post": "Java developer",
-      "description": "description1",
+      "description": "",
       "tools": "Java 7/8, JBoss Server, JBPM, Drools, Maven, Mercurial",
       "site": "https://www.krista.ru"
     }
