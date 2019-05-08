@@ -3,6 +3,11 @@ import careers from '../../resources/careers.json';
 import DateUtil from '../../util/Date';
 import './Careers.css';
 
+const DATE_FORMAT = {
+    month: 'long',
+    year: 'numeric'
+};
+
 /**
  * Careers page
  */
@@ -32,8 +37,17 @@ export default class Careers extends React.Component {
 }
 
 function formatDates(dateStr: string[]): string {
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     const date1 = DateUtil.parseDateFromString(dateStr[0]);
     const date2 = DateUtil.parseDateFromString(dateStr[1]);
-    return `${date1.toLocaleDateString('en-US', options)} - ${date2.toLocaleDateString('en-US', options)}`;
+    if (date1) {
+        const string1 = date1.toLocaleDateString('en-US', DATE_FORMAT);
+        if (date2) {
+            return `${string1} - ${date2.toLocaleDateString('en-US', DATE_FORMAT)}`;
+        }
+        return string1;
+    } else if (date2) {
+        return date2.toLocaleDateString('en-US', DATE_FORMAT);
+    } else {
+        return '';
+    }
 }
