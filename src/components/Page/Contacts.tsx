@@ -1,5 +1,6 @@
 import React from 'react';
 import contacts from '../../resources/contacts.json';
+import './Contacts.css';
 
 interface IContact {
     key: string;
@@ -28,8 +29,8 @@ export default class Contacts extends React.Component {
     public render() {
         return (
             <div className="app-page__root">
-                <h2>Contacts</h2>
-                <div className="flexBox alignItemsBaseline">
+                <h2>Contacts and Social</h2>
+                <div className="flexBox alignItemsBaseline page-careers__item">
                     <div>{this.titles}</div>
                     <div>{this.items}</div>
                 </div>
