@@ -4,9 +4,10 @@
       "key": "0",
       "title": "Tensor ltd.",
       "dates": [
-        "2017-02"
+        "2017-02",
+        ""
       ],
-      "post": "Web developer, team lead",
+      "post": "Web developer, team lead.",
       "description": "",
       "tools": "TypeScript, Less, Git, JavaScript, CSS, HTML",
       "site": "https://tensor.ru"
@@ -18,7 +19,7 @@
         "2017-02"
       ],
       "title": "Scientific and Production Association 'Krista'",
-      "post": "Java developer",
+      "post": "Java developer.",
       "description": "",
       "tools": "Java 7/8, JBoss Server, JBPM, Drools, Maven, Mercurial",
       "site": "https://www.krista.ru"

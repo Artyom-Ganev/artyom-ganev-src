@@ -16,10 +16,10 @@ export default class Careers extends React.Component {
         const items = careers.data.map((item) => {
             return (
                 <div key={item.key} className="page-careers__item">
-                    <div className="flexBox alignItemsBaseline">
-                        <h3 className="">{item.title}</h3>
-                        <div className="page-careers__dates">&nbsp;{formatDates(item.dates)}</div>
-                    </div>
+                    <h3 className="page-careers__title">
+                        <a href={item.site} target="_blank" rel="noopener noreferrer">{item.title}</a>
+                    </h3>
+                    <div className="page-careers__dates">{formatDates(item.dates)}</div>
                     <div className="">{item.post}</div>
                     <div className="">{item.description}</div>
                     <div className="">{item.tools}</div>
@@ -44,10 +44,7 @@ function formatDates(dateStr: string[]): string {
         if (date2) {
             return `${string1} - ${date2.toLocaleDateString('en-US', DATE_FORMAT)}`;
         }
-        return string1;
-    } else if (date2) {
-        return date2.toLocaleDateString('en-US', DATE_FORMAT);
-    } else {
-        return '';
+        return `Since ${string1}`;
     }
+    return '';
 }
