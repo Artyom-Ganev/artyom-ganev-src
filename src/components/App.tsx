@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './App.css';
 import Menu from './Navigation/Menu';
 import Blog from './Page/Blog';
+import Careers from './Page/Careers';
 import Contacts from './Page/Contacts';
 import Main from './Page/Main';
 
@@ -10,7 +11,7 @@ const PAGES = new Map([
     ['main', (<Main/>)],
     // ['bio', (<Main/>)],
     ['blog', (<Blog/>)],
-    // ['careers', (<Main/>)],
+    ['careers', (<Careers/>)],
     ['contacts', (<Contacts/>)]
 ]);
 
@@ -20,7 +21,7 @@ const PAGES = new Map([
 export default class App extends React.Component {
     private menu: Menu | null = null;
     private menuNode: Element | Text | null = null;
-    private currentPage: JSX.Element | undefined = (<Main/>);
+    private currentPage: string = 'main';
 
     constructor(params: object) {
         super(params);
@@ -44,7 +45,7 @@ export default class App extends React.Component {
         return (
             <div className="flexBox flexColumn">
                 <Menu ref={elem => this.menu = elem}/>
-                {this.currentPage}
+                {PAGES.get(this.currentPage)}
             </div>
         );
     }
@@ -54,10 +55,7 @@ export default class App extends React.Component {
      * @param event
      */
     private onMenuItemClick(event: CustomEventInit): void {
-        const item = PAGES.get(event.detail);
-        if (item) {
-            this.currentPage = item;
-            this.forceUpdate();
-        }
+        this.currentPage = event.detail;
+        this.forceUpdate();
     };
 }
