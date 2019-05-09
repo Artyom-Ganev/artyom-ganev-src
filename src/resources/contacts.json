@@ -9,14 +9,26 @@
     {
       "key": "1",
       "value": "Facebook",
-      "link": "https://www.facebook.com/artyom.ganev'",
+      "link": "https://www.facebook.com/artyom.ganev",
       "title": "artyom.ganev"
     },
     {
       "key": "2",
+      "value": "VK",
+      "link": "https://vk.com/a.a.ganev",
+      "title": "a.a.ganev"
+    },
+    {
+      "key": "3",
       "value": "GitHub",
-      "link": "mailto:a.a.ganev@gmail.com'",
+      "link": "https://github.com/Artyom-Ganev/",
       "title": "Artyom-Ganev"
+    },
+    {
+      "key": "4",
+      "value": "Hexlet",
+      "link": "https://ru.hexlet.io/u/artyom_ganev",
+      "title": "artyom_ganev"
     }
   ]
 }

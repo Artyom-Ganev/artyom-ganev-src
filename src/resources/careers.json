@@ -23,6 +23,41 @@
       "description": "",
       "tools": "Java 7/8, JBoss Server, JBPM, Drools, Maven, Mercurial",
       "site": "https://www.krista.ru"
+    },
+    {
+      "key": "2",
+      "dates": [
+        "2011-06",
+        "2014-12"
+      ],
+      "post": "Software implementation specialist",
+      "description": "",
+      "tools": "SQL, Delphi, Oracle, Yaffil, Firebird, Redmine",
+      "site": ""
+    },
+    {
+      "key": "3",
+      "dates": [
+        "2010-02",
+        "2011-05"
+      ],
+      "title": "Business Service ltd.",
+      "post": "Accountant economist and sysadmin",
+      "description": "",
+      "tools": "Joomla",
+      "site": ""
+    },
+    {
+      "key": "4",
+      "dates": [
+        "2009-05",
+        "2009-08"
+      ],
+      "title": "Cetera Labs",
+      "post": "Tester",
+      "description": "",
+      "tools": "Cetera CMS, Cetera ecommerce, Selenium, SVN, Jira",
+      "site": "https://cetera.ru/"
     }
   ]
 }

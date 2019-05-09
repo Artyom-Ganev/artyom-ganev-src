@@ -22,7 +22,9 @@ export default class Careers extends React.Component {
                     <div className="page-careers__dates">{formatDates(item.dates)}</div>
                     <div className="">{item.post}</div>
                     <div className="">{item.description}</div>
-                    <div className="">{item.tools}</div>
+                    <div className="flexBox flexColumn">
+                        <div className="">{item.tools}</div>
+                    </div>
                 </div>
             );
         });
