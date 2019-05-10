@@ -1,6 +1,17 @@
 import React, {SyntheticEvent} from 'react';
 import './Menu.css';
 
+const onClick = (event: SyntheticEvent): void => {
+    const root = document.getElementById('menu');
+    const key = event.currentTarget.getAttribute('id');
+    if (root) {
+        root.dispatchEvent(new CustomEvent('menuItemClick', {detail: key}));
+    }
+};
+
+/**
+ * Navigation menu
+ */
 export default class Menu extends React.Component {
     public render() {
         return (
@@ -12,13 +23,5 @@ export default class Menu extends React.Component {
                 <div className="nav-menu__item" id="contacts" onClick={onClick}>Contacts</div>
             </div>
         );
-    }
-}
-
-function onClick(event: SyntheticEvent): void {
-    const root = document.getElementById('menu');
-    const key = event.currentTarget.getAttribute('id');
-    if (root) {
-        root.dispatchEvent(new CustomEvent('menuItemClick', {detail: key}));
     }
 }
