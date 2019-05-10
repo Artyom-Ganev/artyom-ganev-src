@@ -2,6 +2,7 @@ import React from 'react';
 import blog from '../../resources/blog.json';
 import DateUtil from '../../util/Date';
 import './Blog.css';
+import Container from './Container';
 
 const items = blog.data.sort((o1, o2) => {
     const date1 = DateUtil.parseDateFromString(o1.date) || new Date();
@@ -16,14 +17,11 @@ const items = blog.data.sort((o1, o2) => {
     );
 });
 
+const content = <div className="flexBox flexColumn">{items}</div>;
+
 /**
  * Blog page
  */
 export default () => {
-    return (
-        <div className="app-page__root">
-            <h2>Blog</h2>
-            <div className="flexBox flexColumn">{items}</div>
-        </div>
-    );
+    return <Container title="Blog" content={content}/>;
 }

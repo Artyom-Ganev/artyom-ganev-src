@@ -7,10 +7,10 @@ import './Main.css';
  */
 export default () => {
     return (
-        <div className='app-page__root'>
+        <div className='page-main__root'>
             <div className="flexBox alignItemsCenter">
                 <img className="page-main__image" src={img} alt="Artyom" title="artyom.jpg"/>
-                <div className="app-page--lineHeight">
+                <div className="page-main--lineHeight">
                     <h2>Hi! My name is Artyom.</h2>
                     <div>I'm a programmer, based in Rybinsk, Russia.</div>
                     <div>You can learn some more facts about me on this site later.</div>

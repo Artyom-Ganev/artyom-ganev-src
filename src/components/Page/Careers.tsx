@@ -2,6 +2,7 @@ import React from 'react';
 import careers from '../../resources/careers.json';
 import DateUtil from '../../util/Date';
 import './Careers.css';
+import Container from './Container';
 
 const DATE_FORMAT = {
     month: 'long',
@@ -37,15 +38,12 @@ const items = careers.data.map((item) => {
     );
 });
 
+const content = <div className="flexBox flexColumn">{items}</div>;
+
 /**
  * Careers page
  */
 export default () => {
-    return (
-        <div className="app-page__root">
-            <h2>Careers</h2>
-            <div className="flexBox flexColumn">{items}</div>
-        </div>
-    );
+    return <Container title="Careers" content={content}/>;
 
 }

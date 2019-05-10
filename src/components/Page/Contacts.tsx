@@ -1,6 +1,7 @@
 import React from 'react';
 import contacts from '../../resources/contacts.json';
 import './Contacts.css';
+import Container from './Container';
 
 interface IContact {
     key: string;
@@ -21,17 +22,16 @@ const items = contacts.data.map((item: IContact) => {
     );
 });
 
+const content = (
+    <div className="flexBox alignItemsBaseline page-careers__item">
+        <div>{titles}</div>
+        <div>{items}</div>
+    </div>
+);
+
 /**
  * Contacts page
  */
 export default () => {
-    return (
-        <div className="app-page__root">
-            <h2>Contacts and Social</h2>
-            <div className="flexBox alignItemsBaseline page-careers__item">
-                <div>{titles}</div>
-                <div>{items}</div>
-            </div>
-        </div>
-    );
+    return <Container title="Contacts and Social" content={content}/>;
 }
