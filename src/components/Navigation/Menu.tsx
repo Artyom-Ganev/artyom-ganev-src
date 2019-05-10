@@ -1,6 +1,10 @@
 import React, {SyntheticEvent} from 'react';
 import './Menu.css';
 
+/**
+ * Menu click handler
+ * @param event - original event
+ */
 const onClick = (event: SyntheticEvent): void => {
     const root = document.getElementById('menu');
     const key = event.currentTarget.getAttribute('id');

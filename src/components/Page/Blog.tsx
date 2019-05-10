@@ -4,6 +4,9 @@ import DateUtil from '../../util/Date';
 import './Blog.css';
 import Container from './Container';
 
+/**
+ * Blog items markup
+ */
 const items = blog.data.sort((o1, o2) => {
     const date1 = DateUtil.parseDateFromString(o1.date) || new Date();
     const date2 = DateUtil.parseDateFromString(o2.date) || new Date();
@@ -17,6 +20,9 @@ const items = blog.data.sort((o1, o2) => {
     );
 });
 
+/**
+ * Page content
+ */
 const content = <div className="flexBox flexColumn">{items}</div>;
 
 /**
