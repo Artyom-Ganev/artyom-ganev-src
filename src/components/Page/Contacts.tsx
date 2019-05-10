@@ -3,6 +3,9 @@ import contacts from '../../resources/contacts.json';
 import './Contacts.css';
 import Container from './Container';
 
+/**
+ * Contact options interface
+ */
 interface IContact {
     key: string;
     value: string;
@@ -10,10 +13,16 @@ interface IContact {
     title: string;
 }
 
+/**
+ * Contacts titles markup
+ */
 const titles = contacts.data.map((item: IContact) => {
     return <div key={item.key}>{item.value}:&nbsp;</div>;
 });
 
+/**
+ * Contacts items markup
+ */
 const items = contacts.data.map((item: IContact) => {
     return (
         <div key={item.key}>
@@ -22,6 +31,9 @@ const items = contacts.data.map((item: IContact) => {
     );
 });
 
+/**
+ * Page content
+ */
 const content = (
     <div className="flexBox alignItemsBaseline page-careers__item">
         <div>{titles}</div>

@@ -9,9 +9,13 @@ const DATE_FORMAT = {
     year: 'numeric'
 };
 
-const formatDates = (dateStr: string[]): string => {
-    const date1 = DateUtil.parseDateFromString(dateStr[0]);
-    const date2 = DateUtil.parseDateFromString(dateStr[1]);
+/**
+ * Career dates formatting
+ * @param dates - Starting and Ending of Career item
+ */
+const prepareDates = (dates: string[]): string => {
+    const date1 = DateUtil.parseDateFromString(dates[0]);
+    const date2 = DateUtil.parseDateFromString(dates[1]);
     if (date1) {
         const string1 = date1.toLocaleDateString('en-US', DATE_FORMAT);
         if (date2) {
@@ -22,13 +26,30 @@ const formatDates = (dateStr: string[]): string => {
     return '';
 };
 
+/**
+ * Prepare Career item title. Wraps company name with link if site exists.
+ * @param site - company site
+ * @param title - company name
+ */
+const prepareTitle = (site: string | undefined, title: string | undefined) => {
+    if (site) {
+        return (
+            <a href={site} target="_blank" rel="noopener noreferrer">
+                <h3 className="page-careers__title">{title}</h3>
+            </a>
+        );
+    }
+    return <h3 className="page-careers__title">{title}</h3>;
+};
+
+/**
+ * Careers items markup
+ */
 const items = careers.data.map((item) => {
     return (
         <div key={item.key} className="page-careers__item">
-            <h3 className="page-careers__title">
-                <a href={item.site} target="_blank" rel="noopener noreferrer">{item.title}</a>
-            </h3>
-            <div className="page-careers__dates">{formatDates(item.dates)}</div>
+            {prepareTitle(item.site, item.title)}
+            <div className="page-careers__dates">{prepareDates(item.dates)}</div>
             <div className="">{item.post}</div>
             <div className="">{item.description}</div>
             <div className="flexBox flexColumn">
@@ -38,6 +59,9 @@ const items = careers.data.map((item) => {
     );
 });
 
+/**
+ * Page content
+ */
 const content = <div className="flexBox flexColumn">{items}</div>;
 
 /**

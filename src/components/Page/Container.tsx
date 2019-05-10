@@ -1,6 +1,9 @@
 import React, {ReactNode} from 'react';
 import './Container.css';
 
+/**
+ * Container properties interface
+ */
 interface IProperties {
     title: string;
     content: ReactNode;
