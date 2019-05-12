@@ -4,8 +4,8 @@
 export default class DateUtil {
 
     /**
-     *
-     * @param dateStr
+     * Create Date from date string.
+     * @param dateStr source string with %YYYY-MM-DD% format. Day is optional.
      */
     public static parseDateFromString(dateStr: string): Date | null {
         if (!dateStr) {
@@ -14,7 +14,7 @@ export default class DateUtil {
         const arr = dateStr.split('-');
         const year = arr[0];
         const month = arr[1];
-        const day = arr[2] || "1";
+        const day = arr[2] || '1';
         if (!year || !month) {
             return null;
         }

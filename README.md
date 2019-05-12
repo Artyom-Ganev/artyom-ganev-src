@@ -18,3 +18,4 @@ This project contains sources of https://artyom-ganev.github.io/ site.
 * [TSLint](https://palantir.github.io/tslint/)
 * [Less](http://lesscss.org/)
 * [Webstorm](https://www.jetbrains.com/webstorm/)
+* [Jest](https://jestjs.io/)

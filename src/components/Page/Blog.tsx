@@ -1,6 +1,6 @@
 import React from 'react';
 import blog from '../../resources/blog.json';
-import DateUtil from '../../util/Date';
+import {DateUtil} from '../Utils';
 import './Blog.css';
 import Container from './Container';
 

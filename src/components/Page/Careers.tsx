@@ -1,6 +1,6 @@
 import React from 'react';
 import careers from '../../resources/careers.json';
-import DateUtil from '../../util/Date';
+import {DateUtil} from '../Utils';
 import './Careers.css';
 import Container from './Container';
 
