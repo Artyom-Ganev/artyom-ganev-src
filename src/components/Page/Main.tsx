@@ -15,13 +15,13 @@ export default () => {
                     <div>I'm a programmer, based in Rybinsk, Russia.</div>
                     <div>You can learn some more facts about me on this site later.</div>
                     <div>I'm still working on it.</div>
-                    <div className="flexBox alignItemsBaseline">
-                        <div>The sources of this site are located on GitHub&nbsp;</div>
+                    <div>The sources of this site are located on GitHub&nbsp;
                         <h3>
                             <a href="https://github.com/Artyom-Ganev/artyom-ganev-src" target="_blank"
                                rel="noopener noreferrer">here</a>.
                         </h3>
                     </div>
+
                 </div>
             </div>
         </div>

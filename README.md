@@ -9,6 +9,7 @@ This project contains sources of https://artyom-ganev.github.io/ site.
 **Commands:**
 * *npm run start* - run local development server at http://localhost:3000/
 * *npm run build* - create an optimized production build before deploy to the site
+* *npm run test* - run tests
 - - - -
 **Made with:**
 * [ReactJS](https://reactjs.org/)
