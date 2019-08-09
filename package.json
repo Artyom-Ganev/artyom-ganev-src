@@ -13,7 +13,7 @@
     "url": "git+https://github.com/Artyom-Ganev/artyom-ganev-src.git"
   },
   "dependencies": {
-    "react": "16.8.6"
+    "react": "16.9.0"
   },
   "scripts": {
     "start": "react-scripts start",
