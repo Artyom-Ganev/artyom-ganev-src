@@ -1,4 +1,5 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/Artyom-Ganev/artyom-ganev-src.svg)](https://greenkeeper.io/) 
+[![Build Status](https://dev.azure.com/aaganev/aaganev/_apis/build/status/Artyom-Ganev.artyom-ganev-src?branchName=master)](https://dev.azure.com/aaganev/aaganev/_build/latest?definitionId=5&branchName=master)
 This project contains sources of https://artyom-ganev.github.io/ site.
 
 **Project preparation:**
