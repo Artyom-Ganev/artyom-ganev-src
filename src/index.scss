@@ -1,4 +1,4 @@
-@darkBlueColor: #343648;
+$darkBlueColor: #343648;
 
 a {
   color: #70719b;
@@ -22,7 +22,7 @@ body {
 }
 
 h1, h2, h3 {
-  color: @darkBlueColor;
+  color: $darkBlueColor;
   margin: 0
 }
 
@@ -44,12 +44,14 @@ h1, h2, h3 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
 }
 
 .alignItemsCenter {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+
 }
 
 .alignItemsBaseline {

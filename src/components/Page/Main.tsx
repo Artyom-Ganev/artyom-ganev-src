@@ -1,6 +1,6 @@
 import React from 'react';
 import img from '../../resources/artyom.jpg';
-import './Main.css';
+import './Main.scss';
 
 /**
  * Main page
