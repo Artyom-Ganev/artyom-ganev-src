@@ -1,6 +1,6 @@
 import React from 'react';
 import contacts from '../../resources/contacts.json';
-import './Contacts.css';
+import './Contacts.scss';
 import Container from './Container';
 
 /**

@@ -5,6 +5,7 @@
 
 # converted sources
 *.css
+*.map
 *.js
 
 # testing

@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "react": "16.8.6",
-    "react-dom": "16.9.0"
+    "react-dom": "16.9.0",
+    "react-router-dom": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,10 +29,9 @@
     "@types/react": "16.9.2",
     "@types/react-dom": "16.9.0",
     "@types/react-router-dom": "4.3.5",
-    "less": "^3.10.3",
-    "less-loader": "^5.0.0",
-    "react-router-dom": "5.0.1",
+    "node-sass": "4.12.0",
     "react-scripts": "3.1.1",
+    "sass": "1.23.0-module.beta.1",
     "tslint": "5.19.0",
     "tslint-config-prettier": "1.18.0",
     "tslint-react": "4.0.0",

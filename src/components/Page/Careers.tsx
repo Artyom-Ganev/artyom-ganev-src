@@ -1,7 +1,7 @@
 import React from 'react';
 import careers from '../../resources/careers.json';
-import {DateUtil} from '../Utils';
-import './Careers.css';
+import DateUtil from '../Utils/Date';
+import './Careers.scss';
 import Container from './Container';
 
 const DATE_FORMAT = {

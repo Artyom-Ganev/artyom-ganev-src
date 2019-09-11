@@ -20,4 +20,15 @@ export default class DateUtil {
         }
         return new Date(parseInt(year, 10), parseInt(month, 10) - 1, parseInt(day, 10));
     }
+
+    public static format(dateStr: string): string {
+        const date = DateUtil.parseDateFromString(dateStr);
+        return date
+            ? new Intl.DateTimeFormat('en-GB', {
+                day: '2-digit',
+                month: 'long',
+                year: 'numeric'
+            }).format(date)
+            : '';
+    }
 }
