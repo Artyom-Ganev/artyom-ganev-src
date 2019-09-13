@@ -1,23 +1,23 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/Artyom-Ganev/artyom-ganev-src.svg)](https://greenkeeper.io/) 
-[![Build Status](https://dev.azure.com/aaganev/aaganev/_apis/build/status/Artyom-Ganev.artyom-ganev-src?branchName=master)](https://dev.azure.com/aaganev/aaganev/_build/latest?definitionId=5&branchName=master)
-This project contains sources of https://artyom-ganev.github.io/ site.
-
-**Project preparation:**
+[![Build Status](https://dev.azure.com/aaganev/aaganev/_apis/build/status/Artyom-Ganev.artyom-ganev-src?branchName=master)](https://dev.azure.com/aaganev/aaganev/_build/latest?definitionId=5&branchName=master)  
+This project contains sources of https://artyom-ganev.github.io/ site.  
+**Preparation:**
 1. Clone project with *git clone* command.
 2. Install all dependencies with *npm install*.
-3. Enable TSLint.
+3. Enable TSLint.  
 - - - -
 **Commands:**
 * *npm run start* - run local development server at http://localhost:3000/
 * *npm run build* - create an optimized production build before deploy to the site
-* *npm run test* - run tests
+* *npm run test* - run tests  
 - - - -
 **Made with:**
-* [ReactJS](https://reactjs.org/)
+* [Azure Piplines](https://azure.microsoft.com/en-us/services/devops/pipelines/)
+* [Jest](https://jestjs.io/)
+* [Less](http://lesscss.org/)
 * [NPM](https://www.npmjs.com/)
 * [react-scripts](https://www.npmjs.com/package/react-scripts)
-* [TypeScript](https://www.typescriptlang.org)
+* [ReactJS](https://reactjs.org/)
 * [TSLint](https://palantir.github.io/tslint/)
-* [Less](http://lesscss.org/)
+* [TypeScript](https://www.typescriptlang.org)
 * [Webstorm](https://www.jetbrains.com/webstorm/)
-* [Jest](https://jestjs.io/)
