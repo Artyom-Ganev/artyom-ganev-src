@@ -13,6 +13,7 @@
     "url": "git+https://github.com/Artyom-Ganev/artyom-ganev-src.git"
   },
   "dependencies": {
+    "axios": "0.19.0",
     "react": "16.8.6",
     "react-dom": "16.9.0",
     "react-router-dom": "5.0.1"
