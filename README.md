@@ -22,4 +22,5 @@ Backend sources of https://artyom-ganev.github.io/ site are here https://github.
 * [ReactJS](https://reactjs.org/)
 * [TSLint](https://palantir.github.io/tslint/)
 * [TypeScript](https://www.typescriptlang.org)
+* [axios](https://github.com/axios/axios/)
 * [Webstorm](https://www.jetbrains.com/webstorm/)
