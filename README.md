@@ -14,7 +14,7 @@ This project contains sources of https://artyom-ganev.github.io/ site.
 **Made with:**
 * [Azure Piplines](https://azure.microsoft.com/en-us/services/devops/pipelines/)
 * [Jest](https://jestjs.io/)
-* [Less](http://lesscss.org/)
+* [Sass](https://sass-lang.com//)
 * [NPM](https://www.npmjs.com/)
 * [react-scripts](https://www.npmjs.com/package/react-scripts)
 * [ReactJS](https://reactjs.org/)
