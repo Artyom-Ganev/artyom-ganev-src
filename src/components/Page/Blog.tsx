@@ -5,6 +5,13 @@ import DateUtil from '../Utils/Date';
 import './Blog.scss';
 import Container from './Container';
 
+const DATE_COMPARATOR = (item1: IBlog, item2: IBlog): number => {
+    // TODO: Migrate to normal Date format https://github.com/Artyom-Ganev/artyom-ganev-src/issues/83
+    const date1 = DateUtil.parseDateFromString(`${item1.year}-${item1.month}-${item1.day}`) || new Date();
+    const date2 = DateUtil.parseDateFromString(`${item2.year}-${item2.month}-${item2.day}`) || new Date();
+    return date1 < date2 ? 1 : -1;
+};
+
 /**
  * Blog page
  */
@@ -26,11 +33,11 @@ export default class Blog extends React.Component {
      * Blog items markup
      */
     private getItems() {
-        // TODO: перейти на нормальный формат даты в базе
-        return this.state.items.map((item: IBlog) => {
+        return this.state.items.sort(DATE_COMPARATOR).map((item: IBlog) => {
             return (
                 <div key={item.id} className="page-blog__itemContainer">
-                    <div className="page-blog__title">{DateUtil.format(`${item.year}-${item.month}-${item.day}`)}</div>
+                    <div
+                        className="page-blog__title">{DateUtil.format(`${item.year}-${item.month}-${item.day}`)}</div>
                     <div className="page-blog__item">{item.title}</div>
                     <a href={item.link} target="_blank" rel="noopener noreferrer">{item.linkCaption}</a>
                 </div>
