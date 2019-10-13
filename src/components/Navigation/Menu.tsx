@@ -12,7 +12,6 @@ export default () => {
             <Link className="nav-menu__item" to="/blog">Blog</Link>
             <Link className="nav-menu__item" to="/careers">Careers</Link>
             <Link className="nav-menu__item" to="/contacts">Contacts</Link>
-            <Link className="nav-menu__item" to="/ajax">AJAX</Link>
         </div>
     );
 }
