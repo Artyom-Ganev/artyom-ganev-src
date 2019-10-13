@@ -1,19 +1,21 @@
 .page-main {
 
   &__root {
-    padding: 0.80em;
+    margin-left: 5vw;
+    padding: 0.8em;
+    max-width: 95vw;
+  }
+
+  &__contentBlock {
+    margin-top: 0.8em;
+    line-height: 24px;
   }
 
   &__image {
     border-radius: 50%;
-    width: 50%;
-    height: auto;
-    max-width: 10em;
+    width: 20vw;
+    height: 20vw;
     margin-right: 0.8em;
+    float: left;
   }
-
-  &--lineHeight {
-    line-height: 24px;
-  }
-
 }
