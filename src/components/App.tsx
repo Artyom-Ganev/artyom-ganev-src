@@ -23,6 +23,7 @@ export default () => {
                 <Route path="/careers" component={Careers}/>
                 <Route path="/contacts" component={Contacts}/>
             </div>
+            <div className='components-app__rights'>© 2019 All rights reserved</div>
         </HashRouter>
     );
 }

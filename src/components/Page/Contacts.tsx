@@ -36,7 +36,7 @@ const items = contacts.data.map((item: IContact) => {
  * Page content
  */
 const content = (
-    <div className='flexBox alignItemsBaseline page-contacts__root'>
+    <div className='flexBox alignItemsBaseline justifyContentBetween page-contacts__root'>
         <div>{titles}</div>
         <div className='page-contacts__item'>{items}</div>
     </div>

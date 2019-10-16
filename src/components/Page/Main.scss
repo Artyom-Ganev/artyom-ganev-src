@@ -1,16 +1,5 @@
 .page-main {
 
-  &__root {
-    margin: 0.8em;
-    max-width: 50vw;
-    background: #FFFFFF;
-    border-radius: 0.8em;
-    padding: 0.8em;
-    -moz-box-shadow: 3px 3px 5px 6px #CCCCCC;
-    -webkit-box-shadow: 3px 3px 5px 6px #CCCCCC;
-    box-shadow: 3px 3px 5px 6px #CCCCCC;
-  }
-
   &__contentBlock {
     margin-top: 0.8em;
     line-height: 24px;

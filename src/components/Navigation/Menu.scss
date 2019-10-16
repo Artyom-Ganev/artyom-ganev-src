@@ -1,11 +1,9 @@
 .nav-menu {
   &__root {
     background-color: #FFFFFF;
-    -moz-box-shadow: 0 3px 4px 5px #CCCCCC;
-    -webkit-box-shadow: 0 3px 4px 5px #CCCCCC;
-    box-shadow: 0 3px 4px 5px #CCCCCC;
     position: fixed;
     width: 100%;
+    z-index: 1;
   }
 
   &__item {

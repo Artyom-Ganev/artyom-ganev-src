@@ -16,11 +16,11 @@ const DATE_COMPARATOR = (item1: IBlog, item2: IBlog): number => {
  * Blog page
  */
 export default class Blog extends React.Component {
-    public state: { items: IBlog[] } = { items: [] };
+    public state: { items: IBlog[] } = {items: []};
 
     public componentDidMount() {
         BlogSource.getList().then((items: IBlog[]) => {
-            this.setState({ items });
+            this.setState({items});
         });
     }
 

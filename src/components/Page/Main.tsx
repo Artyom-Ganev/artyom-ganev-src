@@ -2,6 +2,7 @@ import React from 'react';
 import img from '../../resources/artyom.jpg';
 import {BLANK, REL} from "../Utils/Const";
 import './Main.scss';
+import Container from "./Container";
 
 const LINKS = {
     Back: 'https://github.com/Artyom-Ganev/artyom-ganev-server',
@@ -39,4 +40,4 @@ const PAGE_CONTENT = (
     </div>
 );
 
-export default () => PAGE_CONTENT;
+export default () => <Container content={PAGE_CONTENT}/>;

@@ -12,13 +12,6 @@ const items = bio.data.map((value: string, key: number) => {
     );
 });
 
-const content = (
-    <div>
-        <div className="page-bio__root"/>
-        {items}
-    </div>
-);
-
 export default () => {
-    return <Container title="About me" content={content}/>;
+    return <Container title="About me" content={items}/>;
 }
