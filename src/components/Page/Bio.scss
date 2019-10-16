@@ -1,15 +1,6 @@
 .page-bio {
 
   &__root {
-    background-image: url("../../resources/rybinsk.jpg");
-    background-size: cover;
-    position: absolute;
-    opacity: 0.2;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    top: 0;
-    left: 0;
   }
 
   &__item {

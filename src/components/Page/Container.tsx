@@ -15,7 +15,7 @@ interface IProperties {
  */
 export default (props: IProperties) => {
     return (
-        <div className="page-container__root">
+        <div className='page-container__root'>
             <h2>{props.title}</h2>
             <div>{props.content}</div>
         </div>

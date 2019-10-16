@@ -1,5 +1,6 @@
 import React from 'react';
 import contacts from '../../resources/contacts.json';
+import {BLANK, REL} from "../Utils/Const";
 import './Contacts.scss';
 import Container from './Container';
 
@@ -26,7 +27,7 @@ const titles = contacts.data.map((item: IContact) => {
 const items = contacts.data.map((item: IContact) => {
     return (
         <div key={item.key}>
-            <a href={item.link} target="_blank" rel="noopener noreferrer">{item.title}</a>
+            <a href={item.link} target={BLANK} rel={REL}>{item.title}</a>
         </div>
     );
 });
@@ -35,9 +36,9 @@ const items = contacts.data.map((item: IContact) => {
  * Page content
  */
 const content = (
-    <div className="flexBox alignItemsBaseline page-careers__item">
+    <div className='flexBox alignItemsBaseline page-contacts__root'>
         <div>{titles}</div>
-        <div>{items}</div>
+        <div className='page-contacts__item'>{items}</div>
     </div>
 );
 
@@ -45,5 +46,5 @@ const content = (
  * Contacts page
  */
 export default () => {
-    return <Container title="Contacts and Social" content={content}/>;
+    return <Container title='Contacts and Social' content={content}/>;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import {HashRouter, Route} from 'react-router-dom';
+import './App.scss';
 import Menu from './Navigation/Menu';
 import Bio from './Page/Bio';
 import Blog from './Page/Blog';
@@ -13,8 +14,9 @@ import Main from './Page/Main';
 export default () => {
     return (
         <HashRouter>
-            <div className="flexBox flexColumn">
-                <Menu/>
+            <Menu/>
+            <div className='components-app__background'/>
+            <div className="flexBox flexColumn components-app__content">
                 <Route exact={true} path="/" component={Main}/>
                 <Route path="/bio" component={Bio}/>
                 <Route path="/blog" component={Blog}/>

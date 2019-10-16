@@ -1,3 +1,5 @@
-.page-container__root {
-  padding: 0.80em;
+.page-container {
+  &__root {
+    padding: 0.80em;
+  }
 }
