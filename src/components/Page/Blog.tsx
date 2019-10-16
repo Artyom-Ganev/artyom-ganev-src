@@ -1,6 +1,7 @@
 import React from 'react';
 import BlogSource from '../Source/Blog';
 import IBlog from '../Source/IBlog';
+import {BLANK, REL} from "../Utils/Const";
 import DateUtil from '../Utils/Date';
 import './Blog.scss';
 import Container from './Container';
@@ -25,8 +26,8 @@ export default class Blog extends React.Component {
     }
 
     public render() {
-        const content = <div className="flexBox flexColumn">{this.getItems()}</div>;
-        return <Container title="Blog" content={content}/>;
+        const content = <div className='flexBox flexColumn'>{this.getItems()}</div>;
+        return <Container title='Blog' content={content}/>;
     }
 
     /**
@@ -35,11 +36,11 @@ export default class Blog extends React.Component {
     private getItems() {
         return this.state.items.sort(DATE_COMPARATOR).map((item: IBlog) => {
             return (
-                <div key={item.id} className="page-blog__itemContainer">
+                <div key={item.id} className='page-blog__itemContainer'>
                     <div
-                        className="page-blog__title">{DateUtil.format(`${item.year}-${item.month}-${item.day}`)}</div>
-                    <div className="page-blog__item">{item.title}</div>
-                    <a href={item.link} target="_blank" rel="noopener noreferrer">{item.linkCaption}</a>
+                        className='page-blog__title'>{DateUtil.format(`${item.year}-${item.month}-${item.day}`)}</div>
+                    <div className='page-blog__item'>{item.title}</div>
+                    <a href={item.link} target={BLANK} rel={REL}>{item.linkCaption}</a>
                 </div>
             );
         });

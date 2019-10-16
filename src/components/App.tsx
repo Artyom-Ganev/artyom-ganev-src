@@ -16,12 +16,12 @@ export default () => {
         <HashRouter>
             <Menu/>
             <div className='components-app__background'/>
-            <div className="flexBox flexColumn components-app__content">
-                <Route exact={true} path="/" component={Main}/>
-                <Route path="/bio" component={Bio}/>
-                <Route path="/blog" component={Blog}/>
-                <Route path="/careers" component={Careers}/>
-                <Route path="/contacts" component={Contacts}/>
+            <div className='flexBox flexColumn components-app__content'>
+                <Route exact={true} path='/' component={Main}/>
+                <Route path='/bio' component={Bio}/>
+                <Route path='/blog' component={Blog}/>
+                <Route path='/careers' component={Careers}/>
+                <Route path='/contacts' component={Contacts}/>
             </div>
             <div className='components-app__rights'>© 2019 All rights reserved</div>
         </HashRouter>

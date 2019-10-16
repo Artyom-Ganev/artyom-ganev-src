@@ -1,5 +1,6 @@
 import React from 'react';
 import careers from '../../resources/careers.json';
+import {BLANK, REL} from '../Utils/Const';
 import DateUtil from '../Utils/Date';
 import './Careers.scss';
 import Container from './Container';
@@ -34,12 +35,12 @@ const prepareDates = (dates: string[]): string => {
 const prepareTitle = (site: string | undefined, title: string | undefined) => {
     if (site) {
         return (
-            <a href={site} target="_blank" rel="noopener noreferrer">
-                <h3 className="page-careers__title">{title}</h3>
+            <a href={site} target={BLANK} rel={REL}>
+                <h3 className='page-careers__title'>{title}</h3>
             </a>
         );
     }
-    return <h3 className="page-careers__title">{title}</h3>;
+    return <h3 className='page-careers__title'>{title}</h3>;
 };
 
 /**
@@ -47,13 +48,13 @@ const prepareTitle = (site: string | undefined, title: string | undefined) => {
  */
 const items = careers.data.map((item) => {
     return (
-        <div key={item.key} className="page-careers__item">
+        <div key={item.key} className='page-careers__item'>
             {prepareTitle(item.site, item.title)}
-            <div className="page-careers__dates">{prepareDates(item.dates)}</div>
-            <div className="">{item.post}</div>
-            <div className="">{item.description}</div>
-            <div className="flexBox flexColumn">
-                <div className="">{item.tools}</div>
+            <div className='page-careers__dates'>{prepareDates(item.dates)}</div>
+            <div className=''>{item.post}</div>
+            <div className=''>{item.description}</div>
+            <div className='flexBox flexColumn'>
+                <div className=''>{item.tools}</div>
             </div>
         </div>
     );
@@ -62,12 +63,12 @@ const items = careers.data.map((item) => {
 /**
  * Page content
  */
-const content = <div className="flexBox flexColumn">{items}</div>;
+const content = <div className='flexBox flexColumn'>{items}</div>;
 
 /**
  * Careers page
  */
 export default () => {
-    return <Container title="Careers" content={content}/>;
+    return <Container title='Careers' content={content}/>;
 
 }

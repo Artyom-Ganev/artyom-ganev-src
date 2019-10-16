@@ -8,10 +8,10 @@ import Container from './Container';
 
 const items = bio.data.map((value: string, key: number) => {
     return (
-        <div key={key} className="page-bio__item">{value}</div>
+        <div key={key} className='page-bio__item'>{value}</div>
     );
 });
 
 export default () => {
-    return <Container title="About me" content={items}/>;
+    return <Container title='About me' content={items}/>;
 }

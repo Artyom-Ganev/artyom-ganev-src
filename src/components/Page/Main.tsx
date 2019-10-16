@@ -1,8 +1,8 @@
 import React from 'react';
 import img from '../../resources/artyom.jpg';
 import {BLANK, REL} from "../Utils/Const";
-import './Main.scss';
 import Container from "./Container";
+import './Main.scss';
 
 const LINKS = {
     Back: 'https://github.com/Artyom-Ganev/artyom-ganev-server',
