@@ -2,7 +2,7 @@ import React from 'react';
 import {HashRouter, Route} from 'react-router-dom';
 import './App.scss';
 import Menu from './Navigation/Menu';
-import Bio from './Page/Bio';
+// import Bio from './Page/Bio';
 import Blog from './Page/Blog';
 import Careers from './Page/Careers';
 import Contacts from './Page/Contacts';
@@ -18,7 +18,7 @@ export default () => {
             <div className='components-app__background'/>
             <div className='flexBox flexColumn components-app__content'>
                 <Route exact={true} path='/' component={Main}/>
-                <Route path='/bio' component={Bio}/>
+                {/*<Route path='/bio' component={Bio}/>*/}
                 <Route path='/blog' component={Blog}/>
                 <Route path='/careers' component={Careers}/>
                 <Route path='/contacts' component={Contacts}/>
