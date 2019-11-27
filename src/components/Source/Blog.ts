@@ -1,8 +1,11 @@
 import axios from 'axios';
+import PagesCache from '../Utils/PagesCache';
 import IBlog from './IBlog';
 
+const PAGE_NAME = 'blog';
 const BASE_URL = `https://shielded-brushlands-46595.herokuapp.com/blog/`;
 const REQUEST_CONFIG = { headers: { 'x-requested-with': 'xhr' } };
+const CACHE = PagesCache.getInstance();
 
 interface IListResponse {
     data: IBlog[];
@@ -21,10 +24,16 @@ export default class Blog {
      * Get all Blog records
      */
     public static getList(): Promise<IBlog[]> {
+        const cachedData = CACHE.get<IBlog[]>(PAGE_NAME);
+        if (cachedData) {
+            return Promise.resolve(cachedData);
+        }
+
         return new Promise((resolve) => {
             axios.get(BASE_URL, REQUEST_CONFIG)
-                .then((res: IListResponse) => {
-                    resolve(res.data || []);
+                .then(({ data }: IListResponse = { data: [] }) => {
+                    CACHE.set<IBlog[]>('blog', data);
+                    resolve(data);
                 })
                 .catch(() => resolve([]));
         });

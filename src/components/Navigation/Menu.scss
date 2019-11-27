@@ -1,11 +1,14 @@
 .nav-menu {
   &__root {
-    background-color: #f4ffd9;
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
   }
 
   &__item {
     font-weight: bold;
-    padding: 8px 12px;
+    padding: 0.8em 1em;
     color: #343648;
 
     &:visited {
@@ -13,9 +16,10 @@
     }
 
     &:hover {
-      background-color: #c3d4a4;
+      background-color: #ba96ff;
       cursor: pointer;
       text-decoration: none;
+      color: #FFFFFF;
     }
   }
 }

@@ -1,16 +1,14 @@
 import React from 'react';
 import img from '../../resources/artyom.jpg';
+import {BLANK, REL} from "../Utils/Const";
+import Container from "./Container";
 import './Main.scss';
-
-const BLANK = '_blank';
 
 const LINKS = {
     Back: 'https://github.com/Artyom-Ganev/artyom-ganev-server',
     Front: 'https://github.com/Artyom-Ganev/artyom-ganev-src',
     Rybinsk: 'https://en.wikipedia.org/wiki/Rybinsk'
 };
-
-const REL = 'noopener noreferrer';
 
 const CONTENT_BLOCK = 'page-main__contentBlock';
 
@@ -19,19 +17,16 @@ const CONTENT_BLOCK = 'page-main__contentBlock';
  */
 const PAGE_CONTENT = (
     <div className='page-main__root'>
-        <img className="page-main__image" src={img} alt="Artyom" title="artyom.jpg"/>
+        <img className='page-main__image' src={img} alt='Artyom' title='artyom.jpg'/>
         <h2 className={CONTENT_BLOCK}>Hi! My name is Artyom.</h2>
         <div className={CONTENT_BLOCK}>
-            <div>
-                I'm a programmer, based in&nbsp;
-                <a href={LINKS.Rybinsk} target={BLANK} rel={REL}>Rybinsk</a>,&nbsp;Russia. There are some facts
-                about me on this site.
-            </div>
+            I'm a programmer, based in&nbsp;
+            <a href={LINKS.Rybinsk} target={BLANK} rel={REL}>Rybinsk</a>,&nbsp;Russia. There are some facts
+            about me on this site.
         </div>
         <div className={CONTENT_BLOCK}>
-            <div>You can contact me if you have some ideas for it's improvement or have found bugs, typos etc. I'm
-                still working on it.
-            </div>
+            You can contact me if you have some ideas for it's improvement or have found bugs, typos etc. I'm
+            still working on it.
         </div>
         <div className={CONTENT_BLOCK}>
             Frontend of this site is based on React, TypeScript and Sass, the sources of this part are
@@ -45,4 +40,4 @@ const PAGE_CONTENT = (
     </div>
 );
 
-export default () => PAGE_CONTENT;
+export default () => <Container content={PAGE_CONTENT}/>;

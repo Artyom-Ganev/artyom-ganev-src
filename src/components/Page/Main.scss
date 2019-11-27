@@ -1,20 +1,16 @@
 .page-main {
 
-  &__root {
-    margin-left: 5vw;
-    padding: 0.8em;
-    max-width: 95vw;
-  }
-
   &__contentBlock {
     margin-top: 0.8em;
     line-height: 24px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
   }
 
   &__image {
     border-radius: 50%;
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
     margin-right: 0.8em;
     float: left;
   }

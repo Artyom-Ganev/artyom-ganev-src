@@ -1,12 +1,9 @@
-.page-contacts {
+.page-bio {
 
-  &__root {
+  &__item {
+    padding: 0.8em 0 0 0.8em;
     line-height: 24px;
     letter-spacing: 1px;
     word-spacing: 1px;
-  }
-
-  &__item {
-    text-align: right;
   }
 }
