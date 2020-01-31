@@ -2,7 +2,7 @@
   "name": "artyom-ganev.github.io",
   "version": "1.0.0",
   "description": "My personal site builded sources",
-  "main": "index.html",
+  "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
