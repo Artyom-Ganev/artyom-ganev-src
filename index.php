@@ -1,2 +1,4 @@
-/* To run testing App static site */
-<?php include_once("index.html"); ?>
+<?php
+  // To run testing App static site
+  include_once("index.html");
+?>
