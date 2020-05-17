@@ -1,0 +1,1 @@
+{"version":3,"sources":["Contacts.module.scss"],"names":[],"mappings":"AAAA,2BACE,gBAAiB,CACjB,kBAAmB,CACnB,gBAAiB,CACjB,iBAAmB,CACpB,sBAGC,gBAAiB","file":"4.2fa69611.chunk.css","sourcesContent":[".container {\n  line-height: 24px;\n  letter-spacing: 1px;\n  word-spacing: 1px;\n  padding-left: 0.8em;\n}\n\n.item {\n  text-align: right;\n}\n"]}
