@@ -1,2 +1,0 @@
-(this["webpackJsonpartyom-ganev-site"]=this["webpackJsonpartyom-ganev-site"]||[]).push([[8],{187:function(e,a,t){"use strict";t.r(a);var n=t(62),r=t(68),o=t(0),i=t.n(o),s=t(50);a.default=function(){return i.a.createElement(r.PageContainer,{title:"Page Not Found"},i.a.createElement(n.a,{paragraph:!0,variant:"h4"},i.a.createElement(s.b,{to:"/"},"Go to main page")))}}}]);
-//# sourceMappingURL=8.bedad55d.chunk.js.map
