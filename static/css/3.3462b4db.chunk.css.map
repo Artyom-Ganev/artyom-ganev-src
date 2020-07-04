@@ -1,1 +1,0 @@
-{"version":3,"sources":["About.module.scss"],"names":[],"mappings":"AAAA,mBACE,qBAAwB,CACxB,gBAAiB,CACjB,kBAAmB,CACnB,gBAAiB","file":"3.3462b4db.chunk.css","sourcesContent":[".item {\n  padding: 0.8em 0 0 0.8em;\n  line-height: 24px;\n  letter-spacing: 1px;\n  word-spacing: 1px;\n}\n"]}
